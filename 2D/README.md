@@ -1,19 +1,9 @@
 
-## Model weights
-You can download the learned weights of the D-LKA Net in the following table. 
-
-Task | Dataset |Learned weights
------------- | -------------|----
-Multi organ segmentation | [Synapse](https://drive.google.com/uc?export=download&id=18I9JHH_i0uuEDg-N6d7bfMdf7Ut6bhBi) | [D-LKA Net 2D](https://drive.google.com/drive/folders/1TY7G0X32kGbgnzx_Zn5px0gW8fVF4ptI?usp=sharing)
-Skin 2017 | Skin Dataset | D-LKA Net TODO
-Skin 2018 | Skin Dataset | D-LKA Net TODO
-PH2       | Skin Dataset | D-LKA Net TODO
-
 ## Environment Setup
 1. Create a new conda environment with python version 3.8.16:
     ```bash
-    conda create -n "d_lka_net_2d" python=3.8.16
-    conda activate d_lka_net_2d
+    conda create -n "vanfc" python=3.8.16
+    conda activate vanfc
     ```
 2. Install PyTorch and torchvision
     ```bash
@@ -30,7 +20,7 @@ PH2       | Skin Dataset | D-LKA Net TODO
 
 2. Run the code below to train D-LKA Net on the Synapse dataset.
     ```bash
-    python train_MaxViT_deform_LKA.py --root_path ./data/Synapse/train_npz --test_path ./data/Synapse/test_vol_h5 --batch_size 20 --eval_interval 20
+    python train_VAN_FC.py --root_path ./data/Synapse/train_npz --test_path ./data/Synapse/test_vol_h5 --batch_size 20 --eval_interval 20
     ```
     **--root_path**     [Train data path]
 
