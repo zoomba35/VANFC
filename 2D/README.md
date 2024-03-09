@@ -1,9 +1,3 @@
-# 2D Deformable LKA
-
-Instructions for the 2D version of the D-LKA net.
-
-
-
 
 ## Model weights
 You can download the learned weights of the D-LKA Net in the following table. 
